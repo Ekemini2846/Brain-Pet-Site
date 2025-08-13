@@ -112,7 +112,7 @@ body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Ne
 .copyright{text-align:center; margin-top:18px}
 
 /* responsive */
-@media (max-width:100px){
+@media (max-width:980px){
   .hero-inner{grid-template-columns:1fr}
   .about-grid{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
