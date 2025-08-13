@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brian Petstore — Dogs & Cats for Sale & Adoption</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV / HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- SVG logo (minimal + cute + elegant combined) -->
+      <a class="logo" href="#home" aria-label="Brian Petstore">
+        <svg viewBox="0 0 200 60" width="190" height="60" xmlns="http://www.w3.org/2000/svg" role="img">
+          <!-- circle paw background (trust blue) -->
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#1e40af"/>
+              <stop offset="1" stop-color="#2563eb"/>
+            </linearGradient>
+          </defs>
+          <rect rx="10" width="200" height="60" fill="url(#g)"/>
+          <!-- stylized paw (white) -->
+          <g transform="translate(12,7)" fill="#fff" opacity="0.98">
+            <ellipse cx="18" cy="15" rx="10" ry="8"/>
+            <ellipse cx="6" cy="5" rx="4" ry="6"/>
+            <ellipse cx="30" cy="4" rx="4" ry="6"/>
+            <ellipse cx="40" cy="12" rx="4" ry="6"/>
+            <circle cx="18" cy="30" r="7"/>
+          </g>
+          <!-- Name - elegant with small drop shadow -->
+          <text x="78" y="36" fill="#ffffff" font-family="Poppins, sans-serif" font-weight="600" font-size="15">
+            Brian <tspan font-weight="600">Petstore</tspan>
+          </text>
+        </svg>
+      </a>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#pets">Pets</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Find Your Perfect Companion — Dogs & Cats for Sale & Adoption</h1>
+        <p class="lead">Healthy, vaccinated, and vet-checked. Trusted partners, transparent process, lifetime support.</p>
+        <div class="hero-ctas">
+          <a href="#pets" class="btn-primary">Browse Pets</a>
+          <a href="#contact" class="btn-ghost">Contact Us</a>
+        </div>
+
+        <div class="trust-stats">
+          <div><strong>2,000+</strong><span>Happy families</span></div>
+          <div><strong>5+</strong><span>Trusted partners</span></div>
+          <div><strong>100%</strong><span>Health checked</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- sample collage using unsplash images; replace or host your own -->
+        <div class="hero-collage">
+          <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d08eed8a2a8e9d2ef75f9f8d8d9afb2" alt="happy dog" />
+          <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=22c03d4f0e0f3d1a6b8a0f6f7c70c4b1" alt="cute cat" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <h2>Who We Are</h2>
+          <p>Brian Petstore is a family-run pet service committed to placing healthy, well-socialized dogs and cats into loving homes. We partner with trusted brands and local vets to ensure every pet is ready for their new family.</p>
+          <ul class="about-list">
+            <li>Vet checked & vaccinated</li>
+            <li>Transparent health reports</li>
+            <li>Care and rehoming support</li>
+          </ul>
+        </div>
+
+        <div class="about-cards">
+          <div class="card small">
+            <h3>Our Mission</h3>
+            <p>To connect animals with caring families and promote responsible pet ownership.</p>
+          </div>
+          <div class="card small">
+            <h3>Why Trust Us</h3>
+            <p>We partner with reputable brands and provide detailed health checks for every animal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="partners" class="section partners">
+    <div class="container">
+      <h2>Partners</h2>
+      <div class="partners-row" aria-hidden="true">
+        <!-- use real logos or host local images -->
+        <img src="./Royal.png" alt="Royal Canin">
+        <img src="./thumbnail_IMG_1794v2.jpg" alt="Purina">
+        <img src="./PetSmart-Logo-2022.png" alt="PetSmart">
+        <img src="./logo.png" alt="Wysong">
+      </div>
+    </div>
+  </section>
+
+  <!-- PETS / FILTERS -->
+  <section id="pets" class="section pets">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured Pets</h2>
+        <div class="filters">
+          <select id="filter-type">
+            <option value="all">All Types</option>
+            <option value="dog">Dogs</option>
+            <option value="cat">Cats</option>
+          </select>
+
+          <select id="filter-action">
+            <option value="all">Buy or Adopt</option>
+            <option value="buy">Buy ($250+)</option>
+            <option value="adopt">Adopt ($500+)</option>
+          </select>
+
+          <input id="search" type="search" placeholder="Search breed or name..." />
+        </div>
+      </div>
+
+      <div id="pets-grid" class="pets-grid" aria-live="polite">
+        <!-- Pet cards injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PET DETAILS MODAL -->
+  <div id="pet-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <h2>What People Say</h2>
+      <div class="testi-wrapper">
+        <button id="testi-prev" aria-label="Previous">‹</button>
+        <div id="testi-track" class="testi-track">
+          <!-- testimonial items injected by script -->
+        </div>
+        <button id="testi-next" aria-label="Next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contact Us</h2>
+        <p>Ready to bring a new friend home? Message us on WhatsApp and we'll respond quickly.</p>
+        <a id="whatsapp-main" class="btn-primary" href="#" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      </div>
+      <form id="contact-form" class="contact-form" onsubmit="return false;">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="tel" id="phone" placeholder="Phone (WhatsApp)" required />
+        <textarea id="message" placeholder="Tell us what you're looking for" rows="4"></textarea>
+        <button id="contact-send" class="btn-primary">Send via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Brian Petstore</strong>
+          <p>Trusted pet partners. Health checked animals. Lifetime care support.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#pets">Browse Pets</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>WhatsApp: <a id="footer-whatsapp" href="#">(replace number)</a></p>
+          <p>Email: hello@brianpetstore.test</p>
+        </div>
+      </div>
+
+      <p class="copyright">© <span id="year"></span> Brian Petstore — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
