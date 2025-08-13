@@ -73,8 +73,8 @@ for(let i=0;i<TOTAL_CATS;i++){
 // Testimonials (kept small)
 const TESTIMONIALS = [
   { quote: "Brian Petstore made finding our golden retriever so easy. Excellent service and follow-up.", name: "Sarah M., New York", img: "https://randomuser.me/api/portraits/women/68.jpg" },
-  { quote: "Amazing process. Healthy pets and wonderful staff. Our Bella is now family.", name: "James L., California", img: "https://randomuser.me/api/portraits/women/68.jpg" },
-  { quote: "They were professional and transparent. Highly recommended for first-time adopters.", name: "Olivia R., Texas", img: "images/dogs.jpeg" }
+  { quote: "Amazing process. Healthy pets and wonderful staff. Our Bella is now family.", name: "James L., California", img: "https://randomuser.me/api/portraits/men/32.jpg" },
+  { quote: "They were professional and transparent. Highly recommended for first-time adopters.", name: "Olivia R., Texas", img: "https://randomuser.me/api/portraits/women/45.jpg" }
 ];
 
 // ========== DOM refs ==========
