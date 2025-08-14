@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Brian Petstore — Dogs & Cats for Sale & Adoption</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
+  <!-- Remix icons cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
 
   <!-- NAV / HEADER -->
@@ -22,18 +25,18 @@
           <!-- circle paw background (trust blue) -->
           <defs>
             <linearGradient id="g" x1="0" x2="1">
-              <stop offset="0" stop-color="#1e40af"/>
-              <stop offset="1" stop-color="#2563eb"/>
+              <stop offset="0" stop-color="#1e40af" />
+              <stop offset="1" stop-color="#2563eb" />
             </linearGradient>
           </defs>
-          <rect rx="10" width="200" height="60" fill="url(#g)"/>
+          <rect rx="10" width="200" height="60" fill="url(#g)" />
           <!-- stylized paw (white) -->
           <g transform="translate(12,7)" fill="#fff" opacity="0.98">
-            <ellipse cx="18" cy="15" rx="10" ry="8"/>
-            <ellipse cx="6" cy="5" rx="4" ry="6"/>
-            <ellipse cx="30" cy="4" rx="4" ry="6"/>
-            <ellipse cx="40" cy="12" rx="4" ry="6"/>
-            <circle cx="18" cy="30" r="7"/>
+            <ellipse cx="18" cy="15" rx="10" ry="8" />
+            <ellipse cx="6" cy="5" rx="4" ry="6" />
+            <ellipse cx="30" cy="4" rx="4" ry="6" />
+            <ellipse cx="40" cy="12" rx="4" ry="6" />
+            <circle cx="18" cy="30" r="7" />
           </g>
           <!-- Name - elegant with small drop shadow -->
           <text x="78" y="36" fill="#ffffff" font-family="Poppins, sans-serif" font-weight="600" font-size="15">
@@ -42,14 +45,19 @@
         </svg>
       </a>
 
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#pets">Pets</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#partners">Partners</a>
-        <a href="#contact" class="btn-outline">Contact</a>
-      </nav>
+      <div class="nav-container">
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#pets">Pets</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#partners">Partners</a>
+          <a href="#contact" class="btn-outline">Contact</a>
+        </nav>
+        <i class="ri-menu-line menu-icon"></i>
+      </div>
+
+
     </div>
   </header>
 
@@ -58,7 +66,8 @@
     <div class="container hero-inner">
       <div class="hero-text">
         <h1>Find Your Perfect Companion — Dogs & Cats for Sale & Adoption</h1>
-        <p class="lead">Healthy, vaccinated, and vet-checked. Trusted partners, transparent process, lifetime support.</p>
+        <p class="lead">Healthy, vaccinated, and vet-checked. Trusted partners, transparent process, lifetime support.
+        </p>
         <div class="hero-ctas">
           <a href="#pets" class="btn-primary">Browse Pets</a>
           <a href="#contact" class="btn-ghost">Contact Us</a>
@@ -74,8 +83,12 @@
       <div class="hero-visual">
         <!-- sample collage using unsplash images; replace or host your own -->
         <div class="hero-collage">
-          <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d08eed8a2a8e9d2ef75f9f8d8d9afb2" alt="happy dog" />
-          <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=22c03d4f0e0f3d1a6b8a0f6f7c70c4b1" alt="cute cat" />
+          <img
+            src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d08eed8a2a8e9d2ef75f9f8d8d9afb2"
+            alt="happy dog" />
+          <img
+            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=22c03d4f0e0f3d1a6b8a0f6f7c70c4b1"
+            alt="cute cat" />
         </div>
       </div>
     </div>
@@ -87,7 +100,9 @@
       <div class="about-grid">
         <div>
           <h2>Who We Are</h2>
-          <p>Brian Petstore is a family-run pet service committed to placing healthy, well-socialized dogs and cats into loving homes. We partner with trusted brands and local vets to ensure every pet is ready for their new family.</p>
+          <p>Brian Petstore is a family-run pet service committed to placing healthy, well-socialized dogs and cats into
+            loving homes. We partner with trusted brands and local vets to ensure every pet is ready for their new
+            family.</p>
           <ul class="about-list">
             <li>Vet checked & vaccinated</li>
             <li>Transparent health reports</li>
@@ -217,4 +232,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
